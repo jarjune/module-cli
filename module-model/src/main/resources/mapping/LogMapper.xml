@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jarjune.dao.LogDao">
+  <resultMap id="BaseResultMap" type="com.jarjune.model.LogEntity">
+    <id column="log_id" jdbcType="INTEGER" property="logId" />
+    <result column="log_user_name" jdbcType="VARCHAR" property="logUserName" />
+    <result column="log_department" jdbcType="VARCHAR" property="logDepartment" />
+    <result column="log_create_time" jdbcType="TIMESTAMP" property="logCreateTime" />
+    <result column="log_action_name" jdbcType="VARCHAR" property="logActionName" />
+    <result column="log_run_time" jdbcType="DOUBLE" property="logRunTime" />
+  </resultMap>
+  <insert id="insertLog" parameterType="com.jarjune.model.LogEntity">
+    insert into sup_log
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="logId != null">
+        log_id,
+      </if>
+      <if test="logUserName != null">
+        log_user_name,
+      </if>
+      <if test="logDepartment != null">
+        log_department,
+      </if>
+      <if test="logCreateTime != null">
+        log_create_time,
+      </if>
+      <if test="logActionName != null">
+        log_action_name,
+      </if>
+      <if test="logRunTime != null">
+        log_run_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="logId != null">
+        #{logId,jdbcType=INTEGER},
+      </if>
+      <if test="logUserName != null">
+        #{logUserName,jdbcType=VARCHAR},
+      </if>
+      <if test="logDepartment != null">
+        #{logDepartment,jdbcType=VARCHAR},
+      </if>
+      <if test="logCreateTime != null">
+        #{logCreateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="logActionName != null">
+        #{logActionName,jdbcType=VARCHAR},
+      </if>
+      <if test="logRunTime != null">
+        #{logRunTime,jdbcType=DOUBLE},
+      </if>
+    </trim>
+  </insert>
+</mapper>
