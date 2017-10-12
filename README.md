@@ -1,10 +1,10 @@
 ## ssm多模块脚手架
 
-> 经过两天的奋斗，终于搞清楚的多模块项目
-
 > module-config 数据库连接配置等等
 
 > module-core service层
+
+> module-core-impl service实现层 `集成dubbo+zookeeper`
 
 > module-dao 数据库操作层
 

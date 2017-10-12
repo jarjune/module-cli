@@ -36,3 +36,28 @@ buildNumber.properties
 # Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
 !/.mvn/wrapper/maven-wrapper.jar
 
+.idea/inspectionProfiles/
+.idea/libraries/Maven__com_alibaba_dubbo_2_5_3.xml
+.idea/libraries/Maven__com_github_sgroschupf_zkclient_0_1.xml
+.idea/libraries/Maven__io_netty_netty_3_7_0_Final.xml
+.idea/libraries/Maven__jline_jline_0_9_94.xml
+.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_8.xml
+.idea/libraries/Maven__org_javassist_javassist_3_15_0_GA.xml
+.idea/libraries/Maven__org_jboss_netty_netty_3_2_5_Final.xml
+.idea/libraries/Maven__org_springframework_spring_2_5_6_SEC03.xml
+module-config/src/test/
+module-core/src/main/resources/
+module-core/src/test/
+module-dao/src/
+module-model/src/test/
+module-utils/src/main/resources/
+module-utils/src/test/
+module-web/src/main/java/com/jarjune/controller/test/
+.idea/libraries/Maven__com_alibaba_dubbo_2_5_5.xml
+.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml
+module-core-impl/src/main/java/com/jarjune/service/impl/StartDubbo.java
+module-core-impl/src/main/resources/
+module-core-impl/src/test/
+module-web/src/main/java/com/jarjune/controller/Consumer.java
+module-web/src/main/resources/dubbo-consumer.xml
+module-web/src/main/resources/spring/applicationContext.xml

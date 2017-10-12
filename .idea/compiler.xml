@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="module-config" />
         <module name="module-core" />
+        <module name="module-core-impl" />
         <module name="module-dao" />
         <module name="module-model" />
         <module name="module-utils" />
@@ -18,6 +19,7 @@
       <module name="module-cli" target="1.5" />
       <module name="module-config" target="1.5" />
       <module name="module-core" target="1.5" />
+      <module name="module-core-impl" target="1.5" />
       <module name="module-dao" target="1.5" />
       <module name="module-model" target="1.5" />
       <module name="module-utils" target="1.5" />
